@@ -1,0 +1,170 @@
+{% comment %}
+  ROVANTE MAN - Geometric Hero Section
+  Copy this into Sections > rovante-hero.liquid
+{% endcomment %}
+
+<section class="rovante-hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="hero-subtitle">{{ section.settings.subtitle }}</span>
+      <h1 class="hero-title">
+        {{ section.settings.title_line1 }}<br>
+        {{ section.settings.title_line2 }}<br>
+        <span class="hero-accent">{{ section.settings.title_line3 }}</span>
+      </h1>
+      <p class="hero-description">{{ section.settings.description }}</p>
+      
+      <div class="hero-actions">
+        <a href="{{ section.settings.button_link }}" class="btn-primary">{{ section.settings.button_text }}</a>
+        <a href="{{ section.settings.secondary_button_link }}" class="btn-secondary">{{ section.settings.secondary_button_text }}</a>
+      </div>
+    </div>
+    
+    <div class="hero-showcase">
+      <div class="geometric-shape">
+        <div class="shape-inner">
+           <span class="clock-display">09:42</span>
+           <span class="status-tag">Pulse Active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rovante-hero-section {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    padding: 100px 0;
+  }
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    px: 20px;
+  }
+  .hero-content {
+    flex: 1;
+    padding-right: 50px;
+  }
+  .hero-subtitle {
+    color: #2563eb;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.05em;
+    font-style: italic;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+  }
+  .hero-accent {
+    color: #e5e7eb;
+    font-style: normal;
+  }
+  .hero-description {
+    color: #6b7280;
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 20px;
+  }
+  .hero-showcase {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .geometric-shape {
+    width: 350px;
+    height: 350px;
+    background: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 50px 100px -20px rgba(0,0,0,0.15);
+    transform: rotate(12deg);
+  }
+  .shape-inner {
+    width: 250px;
+    height: 250px;
+    background: #f9fafb;
+    border-radius: 50%;
+    border: 8px solid #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .clock-display {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+  }
+  .status-tag {
+    color: #2563eb;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+    .hero-content {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .hero-title {
+      font-size: 50px;
+    }
+    .hero-description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-actions {
+      justify-content: center;
+    }
+    .geometric-shape {
+      width: 280px;
+      height: 280px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Rovante Geometric Hero",
+  "settings": [
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "PRO SERIES 2026" },
+    { "type": "text", "id": "title_line1", "label": "Title Line 1", "default": "ARABIC" },
+    { "type": "text", "id": "title_line2", "label": "Title Line 2", "default": "AURA" },
+    { "type": "text", "id": "title_line3", "label": "Title Line 3 (Accent)", "default": "LUXURY." },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Engineered for the modern man. A seamless blend of traditional Arabic aesthetics and high-performance fitness tracking." },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Shop the Collection" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
+    { "type": "text", "id": "secondary_button_text", "label": "Secondary Button", "default": "Watch Film" },
+    { "type": "url", "id": "secondary_button_link", "label": "Secondary Button Link" }
+  ],
+  "presets": [
+    { "name": "Rovante Geometric Hero" }
+  ]
+}
+{% endschema %}

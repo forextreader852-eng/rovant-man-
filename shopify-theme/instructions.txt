@@ -1,0 +1,27 @@
+ROVANTE MAN - Shopify Theme Implementation Guide
+
+This folder contains the core design assets and sections to replicate the "Geometric Balance" design system in your Shopify store.
+
+HOW TO USE THESE FILES:
+
+1. Assets (rovante.css):
+   - Go to your Shopify Admin > Online Store > Themes.
+   - Click 'Edit Code' on your current theme.
+   - Under 'Assets', click 'Add a new asset'.
+   - Create a file named 'rovante.css' and paste the content from our rovante.css file.
+   - In your 'layout/theme.liquid' file, find the </head> tag and add:
+     {{ 'rovante.css' | asset_url | stylesheet_tag }}
+
+2. Sections (hero.liquid):
+   - Under 'Sections', click 'Add a new section'.
+   - Name it 'rovante-hero'.
+   - Delete any default code and paste the content from our hero.liquid file.
+   - Save the file.
+   - You can now add this section to your homepage via the 'Customize' theme editor.
+
+3. Design Philosophy:
+   - This theme uses 'Outfit' for headings and 'Inter' for body text.
+   - The primary colors are Pure Black (#000000) and Royal Blue (#2563eb).
+   - The "Geometric Balance" look is achieved through large, bold, italicized typography and high-contrast spacing.
+
+Note: This is a standalone component guide. For a full theme import, Shopify requires a .zip file containing specific folders (layout, sections, templates, etc). You can use the "Export as ZIP" feature in the top right of this AI Studio interface to download all files including these Shopify assets.
