@@ -25,10 +25,10 @@ export const Home = () => {
               <div className="h-1 w-12 bg-brand-accent" />
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-black leading-[0.85] tracking-tighter uppercase italic">
+            <h1 className="text-7xl md:text-9xl font-black leading-[0.75] tracking-tightest uppercase italic">
               ARABIC <br />
               AURA <br />
-              <span className="text-gray-300 not-italic">LUXURY.</span>
+              <span className="text-gray-200 not-italic">LUXURY.</span>
             </h1>
             
             <p className="text-gray-500 text-sm md:text-base max-w-sm leading-relaxed font-medium">

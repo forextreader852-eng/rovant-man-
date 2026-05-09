@@ -15,11 +15,6 @@ export const Layout = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Limited Release Bar */}
-      <div className="bg-black text-white py-2 px-4 text-center text-[11px] font-bold tracking-[0.2em] uppercase z-[70] relative">
-        Limited Release: Arabic Aura Pro Series — Only 14 Units Remaining
-      </div>
-
       {/* Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-brand-accent origin-left z-[80]"

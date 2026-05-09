@@ -26,6 +26,9 @@
   .tracking-extrawide {
     tracking: 0.3em;
   }
+  .tracking-tightest {
+    letter-spacing: -0.07em;
+  }
 }
 
 .perspective-1000 {

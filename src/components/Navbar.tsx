@@ -30,8 +30,8 @@ export const Navbar = () => {
       isScrolled ? 'bg-white/90 backdrop-blur-md border-gray-100 py-4' : 'bg-white/50 border-transparent py-6'
     )}>
       <div className="max-w-7xl mx-auto px-4 md:px-10 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-display font-black tracking-tighter uppercase italic text-brand-black">
-          ROVANTE<span className="text-brand-accent not-italic">MAN</span>
+        <Link to="/" className="text-[37px] leading-[121px] font-display font-bold border border-transparent border-solid tracking-tighter uppercase text-brand-black text-center decoration-none">
+          ROVANTE<span className="text-brand-accent">MAN</span>
         </Link>
 
         {/* Desktop Nav */}
